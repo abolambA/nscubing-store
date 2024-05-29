@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Sign up / Login Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slide-navbar-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <script type="module" src="js/register.js" defer></script>
+    <script type="module" src="js/login.js" defer></script>
+    <style>
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+        }
+        .back-arrow img {
+            width: 35px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-arrow"><img src="images/back.png" alt="Back"></a> <!-- Custom back arrow icon -->
+    
+    <div class="main">      
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form id="contactForm">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" id="username" name="txt" placeholder="Username" required="">
+                <input type="email" id="email" name="email" placeholder="Email address" required="">
+                <input type="password" id="password" name="password" placeholder="Password" required="">
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form>
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Password" required="">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Firebase Configuration -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script type="module" src="js/register1.js" defer></script>
+    <script type="module" src="js/login.js" defer></script>
+</body>
+</html>

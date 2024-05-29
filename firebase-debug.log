@@ -1,0 +1,35 @@
+[debug] [2024-05-27T15:31:44.198Z] ----------------------------------------------------------------------
+[debug] [2024-05-27T15:31:44.201Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nuhad\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-27T15:31:44.201Z] CLI Version:   13.10.1
+[debug] [2024-05-27T15:31:44.201Z] Platform:      win32
+[debug] [2024-05-27T15:31:44.202Z] Node Version:  v18.16.0
+[debug] [2024-05-27T15:31:44.203Z] Time:          Mon May 27 2024 19:31:44 GMT+0400 (Gulf Standard Time)
+[debug] [2024-05-27T15:31:44.203Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-27T15:31:44.206Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-05-27T15:31:44.350Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-27T15:31:44.351Z] > authorizing via signed-in user (mn121529@gmail.com)
+[debug] [2024-05-27T15:31:44.351Z] [iam] checking project nscubing-store for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-27T15:31:44.352Z] > refreshing access token with scopes: []
+[debug] [2024-05-27T15:31:44.353Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-27T15:31:44.354Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-27T15:32:05.434Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: connect ETIMEDOUT 2600:1901:0:4d00:::443
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2024-05-27T15:32:05.436Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2024-05-27T15:32:05.436Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------356091936759180955560826","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: connect ETIMEDOUT 2a00:1450:4019:80b::200a:443
+[debug] [2024-05-27T15:32:05.437Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-05-27T15:32:05.437Z] > refreshing access token with scopes: []
+[debug] [2024-05-27T15:32:05.438Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-27T15:32:05.438Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-27T15:32:26.484Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------011330159296270160703043","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: connect ETIMEDOUT 2a00:1450:4019:80b::200a:443
+[debug] [2024-05-27T15:32:26.484Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-05-27T15:32:31.498Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Nuhad\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:267:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
