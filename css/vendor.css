@@ -14,7 +14,7 @@
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #0b0b0b;
+  background: #37b0b6;
   opacity: 0.8; }
 
 .mfp-wrap {
@@ -151,7 +151,7 @@ button::-moz-focus-inner {
     top: 1px; }
 
 .mfp-close-btn-in .mfp-close {
-  color: #333; }
+  color: #37b0b6; }
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
@@ -161,7 +161,7 @@ button::-moz-focus-inner {
   padding-right: 20px;
   width: 100%;
   top: 40px;
-  background: #020000;
+  background: #37b0b6;
   opacity: 0.7;
   font-size: 2.5em;
 }
@@ -170,7 +170,7 @@ button::-moz-focus-inner {
   position: absolute;
   top: 0;
   right: 0;
-  color: #CCC;
+  color: #37b0b6;
   font-size: 12px;
   line-height: 18px;
   white-space: nowrap; }
@@ -218,7 +218,7 @@ button::-moz-focus-inner {
     margin-left: 31px; }
   .mfp-arrow-left:before {
     margin-left: 25px;
-    border-right: 27px solid #3F3F3F; }
+    border-right: 27px solid #37b0b6; }
 
 .mfp-arrow-right {
   right: 0; }
@@ -226,7 +226,7 @@ button::-moz-focus-inner {
     border-left: 17px solid #FFF;
     margin-left: 39px; }
   .mfp-arrow-right:before {
-    border-left: 27px solid #3F3F3F; }
+    border-left: 27px solid #37b0b6; }
 
 .mfp-iframe-holder {
   padding-top: 40px;
@@ -251,7 +251,7 @@ button::-moz-focus-inner {
     width: 100%;
     height: 100%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    background: #000; }
+    background: #37b0b6; }
 
 /* Main image in popup */
 img.mfp-img {
@@ -278,10 +278,10 @@ img.mfp-img {
     width: auto;
     height: auto;
     z-index: -1;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    background: #444; }
+    box-shadow: 0 0 8px #37b0b6;
+    background: #37b0b6; }
   .mfp-figure small {
-    color: #BDBDBD;
+    color: #37b0b6;
     display: block;
     font-size: 12px;
     line-height: 14px; }
@@ -325,7 +325,7 @@ img.mfp-img {
     display: inline;
     margin-left: 5px; }
   .mfp-img-mobile .mfp-bottom-bar {
-    background: rgba(0, 0, 0, 0.6);
+    background: #37b0b6;
     bottom: 0;
     margin: 0;
     top: auto;
@@ -343,7 +343,7 @@ img.mfp-img {
     width: 35px;
     height: 35px;
     line-height: 35px;
-    background: rgba(0, 0, 0, 0.6);
+    background: #37b0b6;
     position: fixed;
     text-align: center;
     padding: 0; } }
